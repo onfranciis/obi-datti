@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import TabBody from "./TabBody";
 
 const Tab = () => {
-  const [tab, setTab] = useState();
+  const [tab, setTab] = useState("Voting Registration");
   return (
     <div className={styles.Tab}>
       <Sidebar tab={tab} setTab={(data) => setTab(data)} />

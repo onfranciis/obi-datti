@@ -13,6 +13,7 @@ const Section2Card = () => {
   const [liked, setLiked] = useState(false);
   const [disliked, setDisliked] = useState(false);
   const [commented, setCommented] = useState(false);
+  const [commentCount, setCommentCount] = useState(300);
 
   return (
     <div className={styles.Section2Card}>
@@ -69,7 +70,7 @@ const Section2Card = () => {
             }}
           />
           <p className={styles.value}>
-            23k <div className={styles.split}></div> Likes
+            1k <div className={styles.split}></div> Dislikes
           </p>
         </div>
 
@@ -81,10 +82,15 @@ const Section2Card = () => {
             width={32}
             onClick={() => {
               setCommented(!commented);
+              if (commented) {
+                setCommentCount(commentCount - 1);
+              } else {
+                setCommentCount(commentCount + 1);
+              }
             }}
           />
           <p className={styles.value}>
-            23k <div className={styles.split}></div> Likes
+            {commentCount} <div className={styles.split}></div> Comments
           </p>
         </div>
       </div>
