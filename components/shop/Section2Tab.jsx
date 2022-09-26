@@ -3,7 +3,7 @@ import styles from "../../styles/Shop.module.scss";
 import Section2TabButtons from "./Section2TabButtons";
 
 const Section2Tab = () => {
-  const [tab, setTab] = useState();
+  const [tab, setTab] = useState("New Arrival");
 
   return (
     <div className={styles.Section2Tab}>

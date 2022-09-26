@@ -81,6 +81,7 @@
     gap: 10px 0;
     text-align: center;
     padding: 50px 100px;
+    position: relative;
   }
 
   .Display {
@@ -168,10 +169,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px 46px;
+  gap: 20px 10px;
   flex-wrap: wrap;
 
   &Buttons {
+    width: 125px;
     cursor: pointer;
 
     p {
