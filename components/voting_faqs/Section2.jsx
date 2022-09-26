@@ -1,5 +1,6 @@
 import styles from "../../styles/VotingFAQS.module.scss";
 import FAQToggle from "./FAQToggle";
+import Rating from "./Rating";
 
 const FAQ = [
   {
@@ -40,7 +41,12 @@ const displayFAQ = () => {
 };
 
 const Section2 = () => {
-  return <div className={styles.Section2}>{displayFAQ()}</div>;
+  return (
+    <div className={styles.Section2}>
+      {displayFAQ()}
+      <Rating />
+    </div>
+  );
 };
 
 export default Section2;
