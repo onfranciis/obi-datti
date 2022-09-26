@@ -20,7 +20,9 @@ const Navbar = () => {
         <Link href="/voting-faqs">
           <p>Voting Faqs</p>
         </Link>
-        <p>Our Community</p>
+        <Link href="/community">
+          <p>Our Community</p>
+        </Link>
         <Link href="/shop">
           <p>Shop</p>
         </Link>
