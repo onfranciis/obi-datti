@@ -1,0 +1,211 @@
+@import "Theme.scss";
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 VOTING FAQS                                */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.VotingFAQS {
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  SECTION 1                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Section1 {
+  height: 500px;
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  background-image: url("/images/votingImage1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .heading {
+    color: $Neutral-00;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    accent-color: rgba(0, 0, 0, 0.596);
+    padding: 0 10px;
+
+    input {
+      height: 80px;
+      width: 100%;
+      max-width: 500px;
+      background-color: $Neutral-00;
+      background-image: url("/images/search.png");
+      background-repeat: no-repeat;
+      background-position-y: center;
+      background-position-x: 32px;
+      background-size: 16px;
+      color: $Neutral-04;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      border: none;
+      padding: 30px 20px 30px 65px;
+    }
+
+    button {
+      height: 80px;
+      background-color: $Primary-02;
+      border: none;
+      cursor: pointer;
+      padding: 29px 50px;
+
+      p {
+        color: $Neutral-00;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      &:hover {
+        background-color: #056e33;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  SECTION 2                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Section2 {
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                TAB COMPONENT                               */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Tab {
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 10px 40px;
+  flex-wrap: wrap;
+  padding: 50px;
+
+  .TabButtons {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+
+    p {
+      color: $Neutral-06;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    .indicator {
+      height: 4px;
+      width: 40px;
+      background-color: $Primary-02;
+    }
+  }
+
+  .Sidebar {
+    // background-color: red;
+    min-width: 200px;
+  }
+
+  .TabBody {
+    min-width: 300px;
+    flex: 1;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 FAQ TOGGLE                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.FAQToggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  overflow: hidden;
+  padding: 0 10px;
+
+  .Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .Question {
+    color: $Neutral-06;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 32px;
+  }
+
+  .Answer {
+    color: $Neutral-04;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    border-bottom: 1px solid $Spec-06;
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,481 @@
+@import "Theme.scss";
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  HOME PAGE                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.HomePage {
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  SECTION 1                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Section1 {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  background-image: url("/images/emmanuel-ikwuegbu-fmPdMlgcaeY-unsplash\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  padding: 40px;
+
+  .Text {
+    max-width: 964px;
+    color: $Neutral-00;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // margin-left: 100px;
+  }
+
+  .Title {
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 80px;
+  }
+
+  .subTitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  SECTION 2                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 120px 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                           SECTION2 CARD COMPONENT                          */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+.Section2Card {
+  height: fit-content;
+  width: fit-content;
+  background-color: $Neutral-00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 80px 52px;
+  filter: drop-shadow(0px 2px 3px grey);
+
+  .icon {
+    max-width: 80px;
+  }
+
+  .text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .title {
+    color: $Neutral-08;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .subTitle {
+    color: $Neutral-04;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  button {
+    width: 248px;
+    background-color: $Primary-02;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 12px 0;
+
+    .text {
+      color: $Neutral-00;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .arrow {
+    }
+
+    &:hover {
+      background-color: #05612d;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  SECTION 3                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Section3 {
+  height: 100%;
+  min-height: 500px;
+  width: 100%;
+  background-color: $Spec-04;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  // margin-top: 300px;
+  // padding-bottom: 500px;
+
+  .ash {
+    height: 350px;
+    width: 100%;
+    background-color: $Spec-02;
+    position: absolute;
+    top: 0;
+  }
+
+  .headingParent {
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    // margin-bottom: 300px;
+    padding: 0 0 100px 0;
+  }
+
+  .heading {
+    color: $Neutral-08;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    padding-bottom: 30px;
+    align-self: flex-start;
+    padding-left: 50px;
+  }
+
+  .group {
+    height: fit-content;
+    width: fit-content;
+    background-color: $Neutral-00;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    filter: drop-shadow(0px 2px 3px grey);
+    padding: 20px;
+
+    .iosRight {
+      height: 50px;
+      width: 50px;
+      background-color: $Neutral-00;
+      border: none;
+      border-radius: 80px;
+      filter: drop-shadow(0px 2px 3px grey);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: -25px;
+      top: 50%;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                SECTION3 CARD                               */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+.Section3Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 10px;
+
+  .image {
+  }
+
+  .title {
+    color: $Neutral-08;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .spec {
+    color: $Spec-01;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  button {
+    background-color: $Primary-02;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+
+    .text {
+      color: $Neutral-00;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 32px;
+    }
+
+    &:hover {
+      background-color: #05612d;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  SECTION 4                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Section4 {
+  height: fit-content;
+  min-height: 653px;
+  width: 100%;
+  background-color: $Spec-04;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 80px;
+  padding: 180px 20px 150px;
+  position: relative;
+
+  .part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 17px;
+  }
+
+  .title {
+    color: $Neutral-08;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    accent-color: $Spec-04;
+
+    input {
+      height: 73px;
+      width: 100%;
+      max-width: 389px;
+      color: $Spec-03;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      border: none;
+      border-radius: 0;
+      padding: 27px 21px;
+    }
+
+    .submitButton {
+      height: 73px;
+      background-color: $Primary-03;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 32px;
+
+      .text {
+        color: $Neutral-00;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .tagline {
+    max-width: 494px;
+    color: $Neutral-04;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .part2 {
+    max-height: 450px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  SECTION 5                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Section5 {
+  min-height: 300px;
+  height: fit-content;
+  width: 100%;
+  background-color: $Neutral-08;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .group {
+    min-height: 418px;
+    height: fit-content;
+    width: 100%;
+    max-width: 1250px;
+    background-color: $Primary-02;
+    background-image: url("/images/flagWithBuilding.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    padding: 20px 0;
+    margin-top: -200px;
+  }
+
+  .heading {
+    max-width: 750px;
+    color: $Spec-05;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+  }
+
+  .decision {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    button {
+      width: 200px;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border: none;
+
+      p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    .stay {
+      background-color: $Neutral-00;
+
+      p {
+        color: $ShadesDarkOver;
+      }
+    }
+
+    .volunteer {
+      background-color: $Neutral-08;
+      gap: 9px;
+
+      p {
+        color: $Neutral-00;
+      }
+    }
+  }
+}
