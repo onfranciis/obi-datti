@@ -1,0 +1,156 @@
+@import "Theme.scss";
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                             REGISTRATION STATUS                            */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.RegistrationStatus {
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  SECTION 1                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Section1Parent {
+  width: 100%;
+  background-image: url("/images/spiral2.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Section1 {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  padding: 160px 10px;
+
+  .top {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .title {
+    color: $Neutral-08;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .subTitle {
+    color: $Neutral-04;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .error {
+    height: 20px;
+    color: $Primary-03;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    accent-color: $Primary-02;
+  }
+
+  .group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1;
+
+    p {
+      color: $Spec-10;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    input {
+      width: 100%;
+      color: $Spec-11;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      border: 1px solid $Spec-06;
+      border-radius: 8px;
+      padding: 17px 20px;
+
+      &::placeholder {
+        color: $Spec-01;
+      }
+    }
+
+    select {
+      width: 100%;
+      background-color: transparent;
+      color: $Spec-11;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      border: 1px solid $Spec-06;
+      border-radius: 8px;
+      padding: 17px 20px;
+    }
+  }
+
+  .submit {
+    background-color: $Primary-02;
+    color: $Neutral-00;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 16px 50px;
+
+    &:hover {
+      background-color: #02672e;
+    }
+  }
+}

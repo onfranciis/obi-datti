@@ -16,7 +16,9 @@ const Navbar = () => {
       </Link>
 
       <div className={styles.section2}>
-        <p>How to Vote</p>
+        <Link href="/registration-status">
+          <p>How to Vote</p>
+        </Link>
         <Link href="/voting-faqs">
           <p>Voting Faqs</p>
         </Link>
