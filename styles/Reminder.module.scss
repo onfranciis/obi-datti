@@ -1,0 +1,251 @@
+@import "Theme.scss";
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  REMINDER                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Reminder {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+
+  .section1 {
+    height: 100%;
+    min-height: 150vh;
+    // min-height: 500px;
+    width: 100vmax;
+    min-width: 500px;
+    background-color: rgb(34, 34, 34);
+    background-image: url("/images/flagSunset.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    align-self: stretch;
+    // padding: 200px 0;
+    padding-top: 70px;
+    // position: fixed;
+
+    p {
+      color: $Neutral-03;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+    }
+  }
+
+  .section2 {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 70px;
+    flex: 1;
+    padding-top: 70px;
+    // position: fixed;
+  }
+
+  .vote {
+    color: $Neutral-08;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 45px;
+  }
+
+  .election {
+    color: $Neutral-04;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 16px 0 48px;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    accent-color: $Primary-02;
+
+    label {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 12px;
+
+      p {
+        color: $Spec-10;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      input {
+        width: 100%;
+        background-color: $Neutral-00;
+        color: $Spec-11;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        border: 1px solid $Spec-06;
+        border-radius: 8px;
+        caret-color: $Primary-02;
+        padding: 17px 20px;
+
+        &::placeholder {
+          color: $Spec-01;
+        }
+      }
+
+      select {
+        width: 100%;
+        background-color: $Neutral-00;
+        color: $Spec-11;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        border: 1px solid $Spec-06;
+        border-radius: 8px;
+        padding: 17px 20px;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      gap: 12px;
+
+      input {
+        height: 24px;
+        width: 24px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .receive {
+        color: $Neutral-05;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+      }
+
+      .we {
+        color: $Neutral-05;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 18x;
+      }
+    }
+
+    button {
+      width: 100%;
+      background-color: $Primary-02;
+      color: $Neutral-00;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 16px;
+      border: none;
+      padding: 22px;
+
+      &:hover {
+        background-color: #015e2a;
+      }
+    }
+  }
+}
+
+.float {
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  .Navbar {
+    height: fit-content;
+    width: 100%;
+    // background-color: red;
+    color: $Neutral-00;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 0;
+    padding: 34px 100px;
+
+    .section1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+        font-weight: 700;
+        font-size: 26px;
+        cursor: pointer;
+
+        .twenty {
+          color: $Primary-02;
+        }
+        .twenty_three {
+          color: $Primary-03;
+        }
+      }
+    }
+
+    .section2 {
+      button {
+        background-color: transparent;
+        color: $Spec-12;
+        font-weight: 700;
+        font-size: 16px;
+        border: 1px solid $Neutral-04;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 16px 28px;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.084);
+        }
+      }
+    }
+  }
+}

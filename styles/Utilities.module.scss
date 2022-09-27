@@ -169,3 +169,95 @@
     text-align: center;
   }
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                      COUNTDOWN COMPONENT FOR REMINDER                      */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+
+  .section {
+    background-color: $Neutral-03;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+  }
+
+  .number {
+    color: $Neutral-08 !important;
+    font-weight: 700 !important;
+    font-size: 40px !important;
+    line-height: 48px !important;
+    text-align: center;
+  }
+
+  .variable {
+    color: $Neutral-06 !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 32px !important;
+    text-align: center;
+  }
+
+  .column {
+    color: $Neutral-03 !important;
+    font-weight: 700 !important;
+    font-size: 50px !important;
+    line-height: 18px !important;
+    text-align: center;
+  }
+}
+
+.CountdownDone {
+  background-color: $Neutral-07;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 3px solid white;
+  border-left-color: $Primary-02;
+  border-right-color: $Primary-02;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 3px white);
+  padding: 10px 15px;
+  margin: 2px;
+
+  .election {
+    color: $Neutral-03 !important;
+    font-weight: 700 !important;
+    font-size: 32px !important;
+    text-align: center;
+  }
+
+  .go {
+    color: $Neutral-03 !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    text-align: center;
+  }
+
+  .peter {
+    color: $Primary-03;
+    text-shadow: 0 0 1px black;
+  }
+
+  .labour {
+    color: $Primary-02;
+    text-shadow: 0 0 3px black;
+  }
+}

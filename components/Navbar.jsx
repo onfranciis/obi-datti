@@ -29,7 +29,9 @@ const Navbar = () => {
           <p>Shop</p>
         </Link>
         <p>Get Involved</p>
-        <p>Volunteer</p>
+        <Link href="/reminder">
+          <p>Volunteer</p>
+        </Link>
       </div>
     </nav>
   );
