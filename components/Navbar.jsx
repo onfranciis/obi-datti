@@ -53,15 +53,14 @@ const Navbar = () => {
           <p>Shop</p>
         </Link>
         <div>
-          <div className={styles.ImageAndText}>
-            <p
-              onClick={() => {
-                setHowToVote(false);
-                setGetInvolved(!getInvolved);
-              }}
-            >
-              Get Involved
-            </p>
+          <div
+            className={styles.ImageAndText}
+            onClick={() => {
+              setHowToVote(false);
+              setGetInvolved(!getInvolved);
+            }}
+          >
+            <p>Get Involved</p>
             <Image
               alt=""
               src={getInvolved ? dropUp : dropDown}
