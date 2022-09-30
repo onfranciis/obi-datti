@@ -10,7 +10,7 @@ const Section1 = () => {
       <div className={styles.group}>
         <p className={styles.heading}>Voting FAQs</p>
         <form action="" onSubmit={handleSubmit}>
-          <input type="search" name="search" id="search" />
+          <input type="search" name="search" id="search" placeholder="search" />
           <button>
             <p>Search</p>
           </button>

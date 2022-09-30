@@ -19,7 +19,8 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 30px 0;
-  padding: 34px;
+  padding: 34px 100px;
+  position: relative;
 
   .section1 {
     display: flex;
@@ -48,10 +49,46 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 28px;
+
+    .ImageAndText {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+    }
+
     p {
       font-weight: 700;
       font-size: 16px;
       cursor: pointer;
+    }
+  }
+}
+
+.NavBarDropdown {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1px;
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+
+  p {
+    width: 100%;
+    color: $Neutral-04;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 5px;
+
+    &:hover {
+      background-color: $Neutral-04;
+      color: $Neutral-08;
     }
   }
 }

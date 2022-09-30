@@ -1,8 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
 
 import styles from "../styles/Utilities.module.scss";
+import { HowToVote, GetInvolved } from "./navbar/NavBarDropdown";
+
+const dropUp = "/icons/dropUp.png";
+const dropDown = "/icons/dropDown.png";
 
 const Navbar = () => {
+  const [howToVote, setHowToVote] = useState(false);
+  const [getInvolved, setGetInvolved] = useState(false);
+
   return (
     <nav className={styles.Navbar}>
       <Link href="/">
@@ -16,9 +25,24 @@ const Navbar = () => {
       </Link>
 
       <div className={styles.section2}>
-        <Link href="/registration-status">
-          <p>How to Vote</p>
-        </Link>
+        <div>
+          <div
+            className={styles.ImageAndText}
+            onClick={() => {
+              setGetInvolved(false);
+              setHowToVote(!howToVote);
+            }}
+          >
+            <p>How to Vote</p>
+            <Image
+              alt=""
+              src={howToVote ? dropUp : dropDown}
+              height={24}
+              width={24}
+            />
+          </div>
+          {howToVote ? <HowToVote /> : ""}
+        </div>
         <Link href="/voting-faqs">
           <p>Voting Faqs</p>
         </Link>
@@ -28,7 +52,25 @@ const Navbar = () => {
         <Link href="/shop">
           <p>Shop</p>
         </Link>
-        <p>Get Involved</p>
+        <div>
+          <div className={styles.ImageAndText}>
+            <p
+              onClick={() => {
+                setHowToVote(false);
+                setGetInvolved(!getInvolved);
+              }}
+            >
+              Get Involved
+            </p>
+            <Image
+              alt=""
+              src={getInvolved ? dropUp : dropDown}
+              height={24}
+              width={24}
+            />
+            {getInvolved ? <GetInvolved /> : ""}
+          </div>
+        </div>
         <Link href="/reminder">
           <p>Volunteer</p>
         </Link>
