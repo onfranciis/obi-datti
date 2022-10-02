@@ -1,3 +1,4 @@
+import { Router, useRouter } from "next/router";
 import styles from "../styles/Reminder.module.scss";
 import Countdown from "../components/reminder/Countdown";
 import { useState } from "react";
@@ -6,6 +7,7 @@ import Image from "next/image";
 
 const Reminder = () => {
   const [timedOut, setTimedOut] = useState(false);
+  const router = useRouter();
 
   const handleForm = (e) => {
     e.preventDefault();
@@ -81,7 +83,7 @@ const Reminder = () => {
           </Link>
 
           <div className={styles.section2}>
-            <button>
+            <button onClick={() => router.back()}>
               <p>Close</p>
               <Image alt="" height={10} width={10} src="/icons/close.png" />
             </button>
