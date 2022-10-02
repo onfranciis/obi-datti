@@ -142,7 +142,7 @@
     align-items: flex-start;
     gap: 5px;
     cursor: pointer;
-    margin: 10px 0;
+    // margin: 10px 0;
 
     p {
       color: $Neutral-06;
@@ -160,6 +160,9 @@
 
   .Sidebar {
     // background-color: red;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     min-width: 200px;
   }
 
@@ -184,6 +187,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 16px;
+  border-bottom: 1px solid $Spec-06;
   overflow: hidden;
   padding: 0 10px;
 
@@ -192,7 +196,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding: 40px 0;
   }
 
   .Question {
@@ -207,7 +211,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 33px;
-    border-bottom: 1px solid $Spec-06;
-    padding-left: 20px;
+    padding: 0px 0 10px 50px;
+    margin-top: -30px;
   }
 }

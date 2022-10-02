@@ -16,7 +16,7 @@ const FAQToggle = (props) => {
       </div>
       <p
         className={styles.Answer}
-        style={{ height: toggle ? "fit-content" : 0 }}
+        style={{ display: toggle ? "block" : "none" }}
       >
         {props.Answer}
       </p>
