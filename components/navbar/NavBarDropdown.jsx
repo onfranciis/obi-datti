@@ -21,7 +21,9 @@ export const GetInvolved = () => {
     <div className={styles.NavBarDropdown}>
       <p>Take action on the issues</p>
       <p>Learn about Voting rights</p>
-      <p>Learn about Democracy</p>
+      <Link href="/learn-about-your-voting-rights">
+        <p>Learn about Democracy</p>
+      </Link>
       <Link href="/contact-elected-officials">
         <p>Contact Elected Officials</p>
       </Link>
