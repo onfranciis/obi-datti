@@ -7,7 +7,9 @@ export const HowToVote = () => {
       <Link href="/registration-status">
         <p>Check your Voter&apos;s registration status</p>
       </Link>
-      <p>Get Election Reminders</p>
+      <Link href="/reminder">
+        <p>Get Election Reminders</p>
+      </Link>
       <p>How to vote at your polling unit</p>
       <p>What&apos;s on your ballot?</p>
     </div>
@@ -20,7 +22,9 @@ export const GetInvolved = () => {
       <p>Take action on the issues</p>
       <p>Learn about Voting rights</p>
       <p>Learn about Democracy</p>
-      <p>Contact Elected Officials</p>
+      <Link href="/contact-elected-officials">
+        <p>Contact Elected Officials</p>
+      </Link>
     </div>
   );
 };
