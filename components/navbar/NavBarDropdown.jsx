@@ -10,7 +10,9 @@ export const HowToVote = () => {
       <Link href="/reminder">
         <p>Get Election Reminders</p>
       </Link>
-      <p>How to vote at your polling unit</p>
+      <Link href="/how-to-vote-at-your-polling-unit">
+        <p>How to vote at your polling unit</p>
+      </Link>
       <p>What&apos;s on your ballot?</p>
     </div>
   );
