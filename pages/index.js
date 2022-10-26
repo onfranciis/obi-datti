@@ -8,6 +8,7 @@ import Section3 from "../components/home_page/Section3";
 import Section4 from "../components/home_page/Section4";
 import Section5 from "../components/home_page/Section5";
 import Footer from "../components/Footer";
+import CountdownMini from "../components/reminder/CountdownMini";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Section1 />
       <Section2 />
       <Section3 Heading="🔥 Obi | Datti Merchandise" halfBottom="#ebebeb" />
+      <CountdownMini />
       <Section4 />
       <Section5 />
       <Footer />
