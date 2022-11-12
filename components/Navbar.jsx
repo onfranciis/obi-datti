@@ -17,6 +17,8 @@ const Navbar = () => {
   const [howToVote, setHowToVote] = useState(false);
   const [getInvolved, setGetInvolved] = useState(false);
   const burgerRef = useRef();
+  const howToVoteParentRef = useRef();
+  const getInvolvedParentRef = useRef();
 
   const handleBurger = () => {
     setSideBar(!sideBar);
@@ -40,6 +42,7 @@ const Navbar = () => {
         <div className={styles.section2}>
           <div>
             <div
+              ref={howToVoteParentRef}
               className={`${styles.ImageAndText} "hii"`}
               onClick={(e) => {
                 setGetInvolved(false);
@@ -55,7 +58,14 @@ const Navbar = () => {
                 width={24}
               />
             </div>
-            {howToVote ? <HowToVote /> : ""}
+            {howToVote ? (
+              <HowToVote
+                ParentRef={howToVoteParentRef}
+                setHowToVote={(data) => setHowToVote(data)}
+              />
+            ) : (
+              ""
+            )}
           </div>
           <Link href="/voting-faqs">
             <p>Voting Faqs</p>
@@ -68,6 +78,7 @@ const Navbar = () => {
           </Link>
           <div>
             <div
+              ref={getInvolvedParentRef}
               className={styles.ImageAndText}
               onClick={() => {
                 setHowToVote(false);
@@ -82,7 +93,14 @@ const Navbar = () => {
                 width={24}
               />
             </div>
-            {getInvolved ? <GetInvolved /> : ""}
+            {getInvolved ? (
+              <GetInvolved
+                ParentRef={getInvolvedParentRef}
+                setGetInvolved={(data) => setGetInvolved(data)}
+              />
+            ) : (
+              ""
+            )}
           </div>
           <Link href="/reminder">
             <p>Volunteer</p>

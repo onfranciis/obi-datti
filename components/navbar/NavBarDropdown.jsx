@@ -1,9 +1,21 @@
 import Link from "next/link";
+import { useRef } from "react";
+import { useClickOutsideDropdown } from "../../hooks/UseClickOutside";
 import styles from "../../styles/Utilities.module.scss";
 
-export const HowToVote = () => {
+export const HowToVote = ({ ParentRef, setHowToVote }) => {
+  const HowToVoteRef = useRef();
+
+  useClickOutsideDropdown(
+    HowToVoteRef,
+    () => {
+      setHowToVote(false);
+    },
+    ParentRef
+  );
+
   return (
-    <div className={styles.NavBarDropdown}>
+    <div className={styles.NavBarDropdown} ref={HowToVoteRef}>
       <Link href="/registration-status">
         <p>Check your Voter&apos;s registration status</p>
       </Link>
@@ -18,9 +30,18 @@ export const HowToVote = () => {
   );
 };
 
-export const GetInvolved = () => {
+export const GetInvolved = ({ ParentRef, setGetInvolved }) => {
+  const GetInvolvedRef = useRef();
+
+  useClickOutsideDropdown(
+    GetInvolvedRef,
+    () => {
+      setGetInvolved(false);
+    },
+    ParentRef
+  );
   return (
-    <div className={styles.NavBarDropdown}>
+    <div className={styles.NavBarDropdown} ref={GetInvolvedRef}>
       <p>Take action on the issues</p>
       <p>Learn about Voting rights</p>
       <Link href="/learn-about-your-voting-rights">
