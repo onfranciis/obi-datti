@@ -12,6 +12,7 @@
 
 .Navbar {
   width: 100%;
+  background-color: $Neutral-00;
   color: $Neutral-07;
   display: flex;
   flex-direction: row;
@@ -21,6 +22,7 @@
   gap: 30px 0;
   padding: 34px 100px;
   position: relative;
+  z-index: 6;
 
   .section1 {
     display: flex;
@@ -64,6 +66,24 @@
       cursor: pointer;
     }
   }
+
+  .burgerParent {
+    padding: 0px 10px;
+  }
+
+  .burgerParent {
+    display: none;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .section2 {
+      display: none;
+    }
+
+    .burgerParent {
+      display: block;
+    }
+  }
 }
 
 .NavBarDropdown {
@@ -75,7 +95,7 @@
   gap: 1px;
   padding: 10px;
   position: absolute;
-  top: 100%;
+  // top: 100%;
   z-index: 5;
 
   p {
@@ -85,6 +105,113 @@
     font-size: 16px;
     line-height: 19px;
     padding: 10px 5px;
+
+    &:hover {
+      background-color: $Neutral-04;
+      color: $Neutral-08;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   SIDEBAR                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Sidebar {
+  height: fit-content;
+  max-height: 100%;
+  background-color: #fff;
+  width: 100%;
+  color: $Neutral-07;
+  gap: 20px 0;
+  overflow: scroll;
+  transition: 1.5s height, 0.5s top;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  padding: 25px 10px 15px;
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.534));
+
+  .section2 {
+    width: 100%;
+    display: flex;
+    // background-color: green;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    .ImageAndText {
+      width: 100%;
+      // background-color: red;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4px;
+      // padding: 10px 0;
+      // margin: -10px 0 0;
+    }
+
+    p {
+      width: 100%;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .burger {
+    min-width: 30px;
+    display: none;
+  }
+
+  // @media screen and (max-width: 1200px) {
+  //   .section2 {
+  //     display: none;
+  //   }
+
+  //   .burger {
+  //     display: block;
+  //   }
+  // }
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.SidebarDropdown {
+  height: 0px;
+  width: 100%;
+  // background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  overflow: hidden;
+  margin-top: 0px;
+
+  p {
+    width: 100%;
+    color: $Neutral-04;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 0px 10px 15px;
 
     &:hover {
       background-color: $Neutral-04;
