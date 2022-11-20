@@ -31,8 +31,9 @@ const Navbar = () => {
       <nav className={cn({ [styles.Navbar]: true })}>
         <Link href="/">
           <div className={styles.section1}>
+            <Image src="/images/ObidientMovement.png" height={82} width={76} />
             <p className={styles.logo}>
-              Obi | Datti
+              Obi <span className={styles.seperator}>|</span> Datti
               <span className={styles.twenty}> 20</span>
               <span className={styles.twenty_three}>23</span>
             </p>
